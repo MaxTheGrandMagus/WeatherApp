@@ -1,3 +1,3 @@
 # WeatherApp
 Weather App using HTML / CSS / Javascript <br>
-Link - https://maxthegrandmagus.github.io/WeatherApp/
+Link - https://maxon-weather-app.netlify.app/
