@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="icon" href="content/icons/meteorology.svg" />
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">  -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet"> 
+</head>
+
+<body>
+    <p id="currentWeather-header">Current WeatherApp</p>
+    <div class="container">
+        <div class="searchContainer">
+            <input class="searchControl" id="searchInput" type="text" placeholder="Enter city name...">
+            <div class="suggestions"></div>     
+            <button class="searchControl" id="searchBtn">Search</button>
+        </div>
+        <div id="weatherContainer">
+            <div class="weatherDescription">
+                <h1 id="cityHeader"></h1>
+                <h2 id="date"></h2>
+                <h2 id="time"></h2>
+                <hr>
+                <div class="weatherMain">
+                    <img id="documentIconImg">  
+                    <div id="temperature"></div>
+                    <div id="min-max"></div>         
+                    <div id="weatherDescriptionHeader"></div>
+                    <div id="weather-video">
+                        <video autoplay muted loop id="myVideo"><source src="" type="video/mp4"></video>
+                    </div>
+                </div>
+                <hr>
+                <div id="feelsLike" class="bottom-details"></div>
+                <div id="windSpeed" class="bottom-details"></div>
+                <div id="humidity" class="bottom-details"></div>
+                <hr>
+                <div id="sunrise" class="bottom-details"></div>
+                <div id="sunset" class="bottom-details"></div> 
+            </div>
+        </div>
+    </div>
+
+    <script src="js/cities.js"></script>
+    <script src="js/scripts.js"></script>    
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" 
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" 
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
